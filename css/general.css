@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.navbar {
+  opacity: 1;
+  z-index: 2;
+  box-shadow: 0 2px 2px #111111;
+}
+
+.navbar-light{
+  background: #333333;
+}
+
+.navbar-toggler, .navbar-toggler:hover, .navbar-toggler:active {
+  border: 0;
+  outline: 0;
+}
+
+.navbar-toggler .dash {
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+  background: white;
+  display: block;
+}
+.navbar .nav-item .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #2B8EBB;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #2B8EBB;
+}
+
+.footer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  /*height: 220px;*/
+  background: #333333;
+  padding: 20px 0 20px 0;
+  color: white;
+}
+
+
+.footer .logo {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer .heading {
+  font-size: 24px;
+}
+
+.footer hr {
+  margin: 10px 0 20px 0;
+  padding: 0;
+  background: #2B8EBB;
+  height: 2px;
+  width: 40px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #2B8EBB;
+}
+
+.footer .service-content {
+  margin: 0 auto;
+}
+
+.footer .service-content .row .col-sm-6 {
+  margin: 2px 0 2px 0;
+}
+.footer .contact-content .row {
+  width: 100%;
+  padding: 0;
+  margin: 10px 0 10px 0;
+}
+
+.footer .contact-content .col-sm-1{
+  padding: 0;
+}
+.footer .contact-content img{
+  width: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer .logo {
+    position: unset;
+    transform: translate(0,0);
+  }
+
+  .footer .row .col-sm-2 {
+    text-align: center;
+  }
+
+  .footer hr {
+    margin: 10px auto 20px auto;
+  }
+
+  .footer .row .col-sm-6, .footer .row .col-sm-4 {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

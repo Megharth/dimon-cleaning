@@ -1,0 +1,275 @@
+.cover-img {
+  position: absolute;
+  top: 0;
+  background-image: url("../assets/cover-3.jpg");
+  min-height: 100%;
+  width: 100vw;
+  background-size: cover;
+}
+
+.cover-img:after {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #111111;
+  opacity: 0.5;
+  content: '';
+}
+
+.page-title {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.page-title .heading {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-title hr {
+  background: white;
+  height: 2px;
+  width: 10%;
+  margin-top: 5px;
+}
+
+.main-row {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.left-contact {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: White;
+}
+
+.left-contact .heading {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.left-contact .information {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.left-contact .information .row {
+  margin-top: 20px;
+}
+
+.left-contact .information .row .col-sm-2 img {
+  width: 30px;
+}
+
+.hl {
+  position: absolute;
+  width: 3px;
+  height: 380px;
+  top: 55%;
+  transform: translateY(-50%);
+  background: white;
+}
+
+/*.main-row .col-sm-4, .main-row .col-sm-1, .main-row .col-sm-7 {
+  padding: 0;
+}*/
+
+.inquiry-container {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background: rgba(43, 142, 187, 0.8);
+  padding: 15px;
+  width: 80%;
+  border-radius: 5px;
+  color: white;
+}
+
+.inquiry-container .heading {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.inquiry-container .row {
+  margin-top: 10px;
+}
+
+.inquiry-container .checkboxes {
+  margin-top: 25px;
+}
+
+.checkbox-label {
+  position: relative;
+  display: block;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+}
+
+.checkbox-label .checkbox-custom:after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 12px;
+  height: 0;
+  width: 0;
+  border-radius: 5px;
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #35e800;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: white;
+}
+
+.inquiry-container .btn {
+  background: #35e800;
+  color: white;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.checkbox-label .title {
+  margin-left: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .page-title {
+    top: 15%;
+  }
+
+  .page-title .heading {
+    font-size: 24px;
+  }
+
+  .page-title .text {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .main-row, .left-contact, .inquiry-container {
+    position: unset;
+    transform: translate(0, 0);
+  }
+
+  .main-row {
+    position: absolute;
+    top: 20%;
+    width: 90%;
+    transform: translateX(-46%);
+  }
+
+  .hl {
+    display: none;
+  }
+
+  .left-contact .heading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .left-contact .information {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .left-contact .information .row {
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .left-contact .information .row .col-sm-2 {
+    width: 20%;
+  }
+
+  .left-contact .information .row .col-sm-10 {
+    width: 50%;
+  }
+
+  .left-contact .information .row .col-sm-2 img {
+    width: 25px;
+  }
+
+  .inquiry-container {
+    margin-top: 20px;
+    width: 100%;
+    overflow-y: scroll;
+    height: 50vh;
+  }
+
+  .inquiry-container .row {
+    margin-top: 0;
+  }
+
+  .inquiry-container .form-control {
+    margin-top: 5px;
+  }
+
+}
+
+@media (min-width: 668px) and (max-width: 768px) {
+  .left-contact {
+    left: 70%;
+  }
+
+  .hl {
+    display: none;
+  }
+
+  .inquiry-container {
+    left: 15%;
+    width: 85%;
+  }
+}
