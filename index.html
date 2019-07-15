@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="./css/index.css">
 
   <title>Dimon Cleaning Service</title>
@@ -26,11 +29,11 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./services.html">Services</a>
+        <a class="nav-link" href="#service">Services</a>
       </li>
       <!--<li class="nav-item dropdown">-->
       <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
@@ -58,47 +61,249 @@
         <a class="nav-link navbar-brand mx-auto" href="#">Dimon Cleaning Service</a>
       </li>-->
       <li class="nav-item">
-        <a class="nav-link" href="./about.html">About Us</a>
+        <a class="nav-link" href="#about">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./contact.html">Contact Us</a>
+        <a class="nav-link" href="#contact">Contact Us</a>
       </li>
     </ul>
   </div>
 </nav>
-<!--Cover Image-->
-<div class="cover-img"></div>
-
-<div class="main-row row">
-  <div class="col-sm-4">
-    <!--Brand Title Left-->
-    <div class="brand-title">
-      <img src="./assets/logo.png" alt="Logo" class="img-fluid">
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <!--Information Text-->
-    <div class="cover-text">
-      Professional Cleaning Service available 7 Days a week.
-    </div>
-  </div>
-  <!--Vertical Divider-->
-  <div class="vd"></div>
-  <div class="col-sm-4">
-    <!--Contact-->
-    <div class="contact-side">
-      <img src="./assets/globe.png" alt="contact" class="img-fluid mx-auto">
-      <a class="text d-block" href="./contact.html">Contact Us!</a>
-    </div>
-  </div>
-</div>
 
 <!--Navigation Dots-->
-<!--<div class="side-dots">
-  <div class="dot mx-auto active"></div>
-  <div class="dot mx-auto"></div>
-  <div class="dot mx-auto"></div>
-</div>-->
+<div class="side-dots">
+  <div class="dot mx-auto" id="home-dot"></div>
+  <div class="dot mx-auto" id="service-dot"></div>
+  <div class="dot mx-auto" id="about-dot"></div>
+  <div class="dot mx-auto" id="contact-dot"></div>
+</div>
+
+<!--Home Container-->
+<section class="home-container" id="home">
+  <div class="main-row row">
+    <div class="col-sm-4">
+      <!--Brand Title Left-->
+      <div class="brand-title">
+        <img src="./assets/logo.png" alt="Logo" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <!--Information Text-->
+      <div class="cover-text">
+        Professional Cleaning Service available 7 Days a week.
+      </div>
+    </div>
+    <!--Vertical Divider-->
+    <div class="vd"></div>
+    <div class="col-sm-4">
+      <!--Contact-->
+      <div class="contact-side">
+        <img src="./assets/globe.png" alt="contact" class="img-fluid mx-auto">
+        <a class="text d-block" href="./contact.html">Contact Us!</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Services-->
+<section class="service-container" id="service">
+  <!--Heading-->
+  <div class="page-title">
+    <div class="heading">Our Services</div>
+    <hr>
+    <div class="text mx-auto">Our professional and experienced cleaning staff can cover the following services</div>
+  </div>
+  <!--Service Icons-->
+  <div class="icon-container">
+    <div class="row icon-row">
+      <a class="col service-icon-container" href="./office.html">
+        <img src="./assets/office.png" alt="" class="service-icon">
+        <div class="icon-text">Office Cleaning</div>
+      </a>
+      <a class="col service-icon-container" href="./builders.html">
+        <img src="./assets/builders.png" alt="" class="service-icon">
+        <div class="icon-text">Builders Cleaning</div>
+      </a>
+      <a class="col service-icon-container" href="./gym.html">
+        <img src="./assets/gym.png" alt="" class="service-icon">
+        <div class="icon-text">Gym Cleaning</div>
+      </a>
+      <a class="col service-icon-container" href="./medical.html">
+        <img src="./assets/medical.png" alt="" class="service-icon">
+        <div class="icon-text">Medical Center Cleaning</div>
+      </a>
+      <a class="col service-icon-container" href="./school.html">
+        <img src="./assets/school.png" alt="" class="service-icon">
+        <div class="icon-text">School/Childcare Cleaning</div>
+      </a>
+      <a class="col service-icon-container" href="./restaurant.html">
+        <img src="./assets/restaurant.png" alt="" class="service-icon">
+        <div class="icon-text">Retail/Restaurant Cleaning</div>
+      </a>
+      <a class="col service-icon-container" href="./window.html">
+        <img src="./assets/window.png" alt="" class="service-icon">
+        <div class="icon-text">Window Cleaning</div>
+      </a>
+      <a class="col service-icon-container" href="./carpet.html">
+        <img src="./assets/carpet.png" alt="" class="service-icon">
+        <div class="icon-text">Carpet Steam Cleaning</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--About Us-->
+
+<section class="about-container" id="about">
+  <div class="page-title">
+    <div class="heading">About Us</div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="page-content">
+      <p>Dimon Cleaning Service, a privately owned and operated company, and provides residential and commercial cleaning services in Australia. We have a dedicated team of experienced cleaning specialists who have been associated with industry standard cleaning. You will benefit from our competence, as Dimon Cleaning Service has consistently delivered outstanding results. We have a huge customer base who are extremely satisfied with our services. We provide residential and commercial cleaning services such as:</p>
+      <ul>
+        <li>Office Cleaning</li>
+        <li>Builders Cleaning</li>
+        <li>Gym Cleaning</li>
+        <li>Medical Center Cleaning</li>
+        <li>School/Childcare Cleaning</li>
+        <li>Retail/Restaurant Cleaning</li>
+        <li>Window Cleaning</li>
+        <li>Carpet Steam Cleaning</li>
+      </ul>
+      <p>Dimon Cleaning Service is 100% committed to making a difference in people’s lives. Every day, we make intentional efforts to ensure that the members of our communities have clean, safe, healthy, and energy efficient places to live and work. We believe that without client's trust, our company will not reach this level of success. That is why we are committed to providing our clients the highest quality of service possible. We do this by observing the company values we have adhered to since day one. No matter what service you ask of us, you can be sure that each of our licensed professionals are striving to fulfill our promise to you.</p>
+      <p>At Dimon Cleaning Service, our team takes pride in the service that we deliver. When you want a service that meets the highest standard of excellence, we are the company to call. Let us help you with water damage, mold removal, air duct cleaning as well as crawl space encapsulation and basement proofing. We are available 24/7 for your convenience and we are looking forward to helping you.</p>
+    </div>
+  </div>
+</section>
+
+<!--Contact Us-->
+
+<section class="contact-container" id="contact">
+  <!--Heading-->
+  <div class="page-title">
+    <div class="heading">Contact Us</div>
+    <hr>
+  </div>
+
+  <div class="main-row row">
+    <!--Left Contact-->
+    <div class="col-sm-4">
+      <div class="left-contact">
+        <div class="heading">
+          <div class="line">We Provide</div>
+          <div class="line">24X7 Support</div>
+        </div>
+        <div class="information">
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="./assets/email.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <span class="value">support@dimoncleaning.com</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="./assets/phone.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <span class="value">0449595488</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Horizontal line-->
+    <div class="col-sm-1">
+      <div class="hl"></div>
+    </div>
+
+    <!--Inquiry-->
+    <div class="col-sm-7">
+      <div class="inquiry-container">
+        <div class="heading">Request a Quote</div>
+        <div class="row">
+          <div class="col-sm-6"><input type="text" class="form-control" placeholder="Name"></div>
+          <div class="col-sm-6"><input type="number" class="form-control" placeholder="Phone"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12"><input type="email" class="form-control" placeholder="Email"></div>
+        </div>
+        <div class="checkboxes">
+          <div class="row">
+            <div class="col-sm-6">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="title">Office Cleaning</span>
+              </label>
+            </div>
+            <div class="col-sm-6">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="title">Builders Cleaning</span>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="title">Gym Cleaning</span>
+              </label>
+            </div>
+            <div class="col-sm-6">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="title">Medical Center Cleaning</span>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="title">School/Childcare Cleaning</span>
+              </label>
+            </div>
+            <div class="col-sm-6">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="title">Retail/Restaurant Cleaning</span>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="title">Window Cleaning</span>
+              </label>
+            </div>
+            <div class="col-sm-6">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="title">Carpet Steam Cleaning</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <button class="btn mx-auto d-block">Request</button>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!--Footer-->
 <div class="footer">
@@ -149,9 +354,10 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

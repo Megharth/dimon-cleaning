@@ -1,23 +1,5 @@
-.cover-img {
-  position: absolute;
-  top: 0;
-  background-image: url("../assets/cover-3.jpg");
-  min-height: 100%;
-  width: 100vw;
-  background-size: cover;
-}
 
-.cover-img:after {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  background: #111111;
-  opacity: 0.5;
-  content: '';
-}
-
-.page-title {
+/*.page-title {
   position: absolute;
   top: 18%;
   left: 50%;
@@ -37,17 +19,36 @@
   height: 2px;
   width: 10%;
   margin-top: 5px;
+}*/
+
+.contact-container {
+  position: relative;
+  background: url("../assets/cover-3.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
 }
 
-.main-row {
+.contact-container:after {
+  position: absolute;
+  top:0%;
+  height: 100%;
+  width: 100%;
+  background: #111111;
+  opacity: 0.5;
+  content: '';
+}
+
+.contact-container .main-row {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  z-index: 1;
 }
 
-.left-contact {
+.contact-container .left-contact {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -55,26 +56,26 @@
   color: White;
 }
 
-.left-contact .heading {
+.contact-container .left-contact .heading {
   font-size: 42px;
   text-transform: uppercase;
   font-weight: bolder;
 }
 
-.left-contact .information {
+.contact-container .left-contact .information {
   font-size: 20px;
   margin-top: 20px;
 }
 
-.left-contact .information .row {
+.contact-container .left-contact .information .row {
   margin-top: 20px;
 }
 
-.left-contact .information .row .col-sm-2 img {
+.contact-container .left-contact .information .row .col-sm-2 img {
   width: 30px;
 }
 
-.hl {
+.contact-container .hl {
   position: absolute;
   width: 3px;
   height: 380px;
@@ -87,7 +88,7 @@
   padding: 0;
 }*/
 
-.inquiry-container {
+.contact-container .inquiry-container {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
@@ -98,33 +99,33 @@
   color: white;
 }
 
-.inquiry-container .heading {
+.contact-container .inquiry-container .heading {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.inquiry-container .row {
+.contact-container .inquiry-container .row {
   margin-top: 10px;
 }
 
-.inquiry-container .checkboxes {
+.contact-container .inquiry-container .checkboxes {
   margin-top: 25px;
 }
 
-.checkbox-label {
+.contact-container .checkbox-label {
   position: relative;
   display: block;
 }
 
-.checkbox-label input {
+.contact-container .checkbox-label input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.checkbox-label .checkbox-custom {
+.contact-container .checkbox-label .checkbox-custom {
   position: absolute;
   top: 0;
   left: 0;
@@ -136,7 +137,7 @@
   transition: all 0.3s ease-out;
 }
 
-.checkbox-label .checkbox-custom:after {
+.contact-container .checkbox-label .checkbox-custom:after {
   position: absolute;
   content: "";
   left: 12px;
@@ -148,7 +149,7 @@
   opacity: 1;
 }
 
-.checkbox-label input:checked ~ .checkbox-custom {
+.contact-container .checkbox-label input:checked ~ .checkbox-custom {
   background-color: #35e800;
   border-radius: 5px;
   -webkit-transform: rotate(0deg) scale(1);
@@ -158,7 +159,7 @@
   border: white;
 }
 
-.inquiry-container .btn {
+.contact-container .inquiry-container .btn {
   background: #35e800;
   color: white;
   margin-top: 20px;
@@ -166,7 +167,7 @@
   font-weight: bold;
 }
 
-.checkbox-label input:checked ~ .checkbox-custom::after {
+.contact-container .checkbox-label input:checked ~ .checkbox-custom::after {
   -webkit-transform: rotate(45deg) scale(1);
   -ms-transform: rotate(45deg) scale(1);
   transform: rotate(45deg) scale(1);
@@ -181,94 +182,100 @@
   border-radius: 0;
 }
 
-.checkbox-label .title {
+.contact-container .checkbox-label .title {
   margin-left: 30px;
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  .page-title {
-    top: 15%;
+  .contact-container .page-title {
+    top: 12%;
   }
 
-  .page-title .heading {
+  .contact-container .page-title .heading {
     font-size: 24px;
   }
 
-  .page-title .text {
+  .contact-container .page-title .text {
     width: 100%;
     font-size: 12px;
   }
 
-  .main-row, .left-contact, .inquiry-container {
+  .contact-container .main-row, .left-contact, .inquiry-container {
     position: unset;
     transform: translate(0, 0);
   }
 
-  .main-row {
-    position: absolute;
+  .contact-container .main-row {
+    position: relative;
     top: 20%;
     width: 90%;
-    transform: translateX(-46%);
+    transform: translateX(-50%);
   }
 
-  .hl {
+  .contact-container .hl {
     display: none;
   }
 
-  .left-contact .heading {
-    font-size: 24px;
+  .contact-container .left-contact .heading {
+    font-size: 20px;
     text-align: center;
+    margin-top: 10px;
+    margin-left: 25px;
   }
 
-  .left-contact .information {
+  .contact-container .left-contact .information {
     font-size: 18px;
     margin-top: 20px;
   }
 
-  .left-contact .information .row {
+  .contact-container .left-contact .information .row {
     margin-top: 10px;
     width: 90%;
   }
 
-  .left-contact .information .row .col-sm-2 {
-    width: 20%;
+  .contact-container .left-contact .information .row .col-sm-2 {
+    width: 30%;
+    padding: 0;
+    margin-left: -15px;
   }
 
-  .left-contact .information .row .col-sm-10 {
-    width: 50%;
+  .contact-container .left-contact .information .row .col-sm-10 {
+    width: 70%;
+    padding: 0;
+    margin-left: -10px;
   }
 
-  .left-contact .information .row .col-sm-2 img {
+  .contact-container .left-contact .information .row .col-sm-2 img {
     width: 25px;
   }
 
-  .inquiry-container {
-    margin-top: 20px;
+  .contact-container .inquiry-container {
+    margin-top: 85%;
     width: 100%;
     overflow-y: scroll;
     height: 50vh;
   }
 
-  .inquiry-container .row {
+  .contact-container .inquiry-container .row {
     margin-top: 0;
   }
 
-  .inquiry-container .form-control {
+  .contact-container .inquiry-container .form-control {
     margin-top: 5px;
   }
 
 }
 
 @media (min-width: 668px) and (max-width: 768px) {
-  .left-contact {
+  .contact-container .left-contact {
     left: 70%;
   }
 
-  .hl {
+  .contact-container .hl {
     display: none;
   }
 
-  .inquiry-container {
+  .contact-container .inquiry-container {
     left: 15%;
     width: 85%;
   }
