@@ -18,3 +18,12 @@
   width: 5%;
   margin-top: 5px;
 }
+
+.page-content {
+  margin-top: 20px;
+  font-size: 18px;
+  text-indent: 25px;
+  text-align: justify;
+  color: #444444;
+  padding-bottom: 20px;
+}
