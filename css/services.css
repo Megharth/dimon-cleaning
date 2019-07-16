@@ -2,26 +2,8 @@ body {
   transition: all 0.3s ease-out;
 }
 
-/*.cover-img-service{
-  position: relative;
-  !*top: 0;*!
-  background-image: url("../assets/cover-2.jpg");
-  min-height: 100%;
-  width: 100vw;
-  background-size: cover;
-}
-
-.cover-img-service:after {
-  position: absolute;
-  top:0;
-  height: 100vh;
-  width: 100vw;
-  background: #111111;
-  opacity: 0.5;
-  content: '';
-}*/
-
 .service-container {
+  position: relative;
   background-image: url("../assets/cover-2.jpg");
   height: 100vh;
   width: 100vw;
@@ -30,7 +12,7 @@ body {
 
 .service-container:after {
   position: absolute;
-  top:100%;
+  top:0;
   height: 100vh;
   width: 100vw;
   background: #111111;

@@ -24,7 +24,7 @@ $(window).on('scroll', function () {
 
 
 $(".side-dots").find('div').on('click', function () {
-  var $el = $(this)
+  let $el = $(this)
     , id = $el.attr('id');
 
   id = id.split('-')[0]

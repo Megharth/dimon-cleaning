@@ -38,14 +38,15 @@ html, body {
   background: white;
 }
 
-.home-container {
+.home-container, .why-us-container{
+  position: relative;
   background-image: url("../assets/cover-1.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
 }
 
-.home-container:after {
+.home-container:after, .why-us-container:after {
   position: absolute;
   top:0;
   height: 100%;
@@ -110,6 +111,115 @@ html, body {
   margin-top: 20px;
   color: white;
   font-family: 'oswald', sans-serif;
+}
+
+/*WHY US SECTION STYLES*/
+
+.why-us-container {
+  background: url("../assets/cover-5.jpg");
+  background-size: cover;
+}
+
+.why-us-container .page-title {
+  top: 10%;
+}
+
+.why-us-container .main-row {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.why-us-container .main-row .card{
+  z-index: 1;
+  color: white;
+  background-color: #2B8EBB;
+  opacity: 0.8;
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: -4px 4px 4px #444444;
+}
+
+.why-us-container .main-row .card .heading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.why-us-container .main-row .card .image img {
+  height: 100px;
+  margin-top: 10px;
+}
+.why-us-container .main-row .card .text {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .why-us-container {
+    height: auto;
+  }
+
+  .why-us-container .page-title {
+    position: absolute;
+    top: 7%;
+  }
+
+  .why-us-container .main-row {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 130px;
+    transform: translate(0,0);
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .why-us-container .main-row .col-sm-3 {
+    margin-top: 10px;
+  }
+  .why-us-container .main-row .card {
+    height: 300px;
+  }
+
+  .why-us-container .main-row .card .heading {
+    font-size: 16px;
+  }
+  .why-us-container .main-row .card .image img{
+    height: 50px;
+  }
+  .why-us-container .main-row .card .text {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 968px) {
+  .why-us-container .main-row {
+    width: 100%;
+  }
+
+  .why-us-container .main-row .card {
+    width: 185px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1024px) {
+  .why-us-container .main-row {
+    width: 100%;
+  }
+
+  .why-us-container .main-row .card {
+    width: 240px;
+    height: 500px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
