@@ -22,15 +22,30 @@ $(window).on('scroll', function () {
   });
 });
 
+nav.find('a').on('click', function () {
+  var $el = $(this)
+    , id = $el.attr('href');
+
+  nav_height = nav_height - 50
+  $('html, body').animate({
+    scrollTop: $(id).offset().top - nav_height
+  }, 100);
+
+  nav_height = nav_height + 50
+  return false;
+});
 
 $(".side-dots").find('div').on('click', function () {
   let $el = $(this)
     , id = $el.attr('id');
 
+  console.log(nav_height)
+  nav_height = nav_height - 50
   id = id.split('-')[0]
   $('html, body').animate({
-    scrollTop: $("#" + id).offset().top
+    scrollTop: $("#" + id).offset().top - nav_height
   }, 100);
 
+  nav_height += 50
   return false;
 });

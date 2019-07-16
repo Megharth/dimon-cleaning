@@ -8,9 +8,49 @@ html, body {
   scroll-behavior: smooth;
 }
 
+
 .navbar {
   position: fixed;
   top: 0;
+}
+
+.navbar-brand {
+  position: relative;
+}
+.navbar-brand .brand-image {
+  position: absolute;
+  height: 60px;
+  display: inline-block;
+}
+
+.navbar-brand .hr, .navbar-brand .tagline{
+  display: inline-block;
+}
+
+.navbar-brand .hr {
+  position: absolute;
+  height: 60px;
+  width: 2px;
+  background: white;
+  left: 90px;
+}
+.navbar-brand .tagline {
+  position: relative;
+  left: 110px;
+  font-size: 14px;
+  color: white;
+}
+
+.navbar-contact {
+  position: relative;
+  right: 0;
+  color: White;
+}
+
+.navbar-contact .row{
+  position: relative;
+  width: 300px;
+  margin-top: 5px;
 }
 .side-dots {
   position: fixed;
@@ -120,10 +160,6 @@ html, body {
   background-size: cover;
 }
 
-.why-us-container .page-title {
-  top: 10%;
-}
-
 .why-us-container .main-row {
   width: 90%;
   position: absolute;
@@ -137,7 +173,7 @@ html, body {
   color: white;
   background-color: #2B8EBB;
   opacity: 0.8;
-  height: 400px;
+  height: 300px;
   width: 300px;
   padding: 20px;
   border-radius: 5px;
@@ -161,6 +197,19 @@ html, body {
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
+  .navbar-contact .row {
+    margin-top: 5px;
+  }
+  .navbar-contact .row .col-sm-2 {
+    width: 60px;
+  }
+  .navbar-contact .row .col-sm-10 {
+    width: 240px;
+    padding: 0;
+  }
+  .navbar-contact .row .col-sm-2 .img-fluid {
+    width: 20px;
+  }
   .why-us-container {
     height: auto;
   }
@@ -185,7 +234,7 @@ html, body {
     margin-top: 10px;
   }
   .why-us-container .main-row .card {
-    height: 300px;
+    height: 230px;
   }
 
   .why-us-container .main-row .card .heading {
@@ -207,7 +256,7 @@ html, body {
 
   .why-us-container .main-row .card {
     width: 185px;
-    height: 600px;
+    height: 400px;
   }
 }
 
@@ -218,7 +267,7 @@ html, body {
 
   .why-us-container .main-row .card {
     width: 240px;
-    height: 500px;
+    height: 400px;
   }
 }
 
