@@ -11,11 +11,25 @@
   <link rel="stylesheet" href="css/service-general.css">
 
   <title>Dimon Cleaning Service</title>
+
+  <style>
+    .page-title {
+      background: url("./assets/window-poster.jpg") no-repeat no-repeat;
+      background-size: cover;
+      background-position-y: -300px;
+    }
+
+    @media (min-width: 320px) and (max-width: 540px){
+      .page-title {
+        background-position-y: 0;
+      }
+    }
+  </style>
 </head>
 <body>
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="navbar-brand">
+  <a href="./index.html" class="navbar-brand">
     <img src="./assets/logo.png" alt="" class="img-fluid brand-image">
     <div class="hr"></div>
     <div class="tagline">
@@ -23,7 +37,7 @@
       <div>Value</div>
       <div>Satisfaction</div>
     </div>
-  </div>
+  </a>
   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="dash"></span>
@@ -107,7 +121,7 @@
     <p>Whether you’re in the spring cleaning mood, preparing for a holiday get together at your house, or hosting a party, leave the window cleaning to the experts at Dimon Cleaning. Regardless of the time of year, we are available when you need us. We will wipe away your winter blues so you can see clearly today, and every day. For more information about our Window cleaning services or to schedule an estimate and discuss your specific needs, contact us today.</p>
   </div>
   <!--Inquiry button-->
-  <a href="./contact.html" class="btn ml-auto d-block inquire-button">Inquire Now <img src="./assets/right-arrow.png" alt=""></a>
+  <a href="./index.html#contact" class="btn ml-auto d-block inquire-button">Inquire Now <img src="./assets/right-arrow.png" alt=""></a>
 </div>
 
 <!--Footer-->
